@@ -3,40 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <!--CDN links-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!--stylesheet links-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/dist/style.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MilliWavel Inn</title>
+    <!--animation-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+    ></script>
+    <title>morningstar</title>
   </head>
   <body>
-    <!--nav bar-->
     <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">MilliWavel Inn</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">Sass</a></li>
-          <li><a href="#">Components</a></li>
-          <li><a href="#">JavaScript</a></li>
+      <div class="nav-wrapper white">
+        <a href="#!" class="brand-logo black-text"
+          >morning<span
+            ><img
+              class="topLogo"
+              src="icons/star-shine-svgrepo-com.svg" /></span
+          >star hotels</a
+        >
+
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="black right hide-on-med-and-down">
+          <li><a href="#">BOOK NOW</a></li>
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="#">UPDATES</a></li>
+          <li><a href="#">SHOP</a></li>
         </ul>
       </div>
     </nav>
-    <header>
-      <h1>Hello SASS</h1>
-      <button>PRESS</button>
-    </header>
-    <div class="contact">
-      <button>PRESS</button>
-      <div class="info">
-        <h1>Contact</h1>
-        <p>page info</p>
+
+    <ul class="sidenav black-text" id="mobile-demo">
+      <li><a href="#">Book</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Updates</a></li>
+      <li><a href="#">Shop</a></li>
+    </ul>
+    <div id="row" class="row">
+      <div class="logoHeading col s1 offset-s6">
+        <h1 class="morning">morning</h1>
+        <img class="starIMG" src="icons/star-shine-svgrepo-com.svg" />
+        <h1 class="star">star</h1>
+        <h4 class="slogan">WAKE UP SEE THE WORLD</h4>
+      </div>
+
+      <a
+        id="bookBtn"
+        class="col s1 offset-s6 white black-text waves-effect waves-light btn-large"
+        >BOOK NOW</a
+      >
+    </div>
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">A Room with a View</h2>
+        <p class="grey-text text-darken-3 lighten-3">
+          Parallax is an effect where the background content or image in this
+          case, is moved at a different speed than the foreground content while
+          scrolling. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quasi, obcaecati dolores. Aliquam illo excepturi facilis incidunt hic,
+          voluptatibus quos consequatur praesentium minima debitis tempore quae
+          id aspernatur inventore deleniti. Fugit, modi repudiandae numquam
+          praesentium voluptatum dolores libero obcaecati nihil velit assumenda
+          odio qui aperiam inventore officiis culpa nisi corrupti eos, labore
+          maiores! Ipsum, ratione eius sequi sit iusto numquam esse accusamus
+          saepe laboriosam enim asperiores distinctio iste ipsam doloremque
+          veniam dicta aliquid porro, fugiat, tenetur quis provident sed vero.
+        </p>
       </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
